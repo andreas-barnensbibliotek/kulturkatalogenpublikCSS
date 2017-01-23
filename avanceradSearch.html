@@ -1,0 +1,340 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Sök | Kulturkatalogen Väst</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/price-range.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+	<header id="header"><!--header-->
+		<div class="header_top"><!--header_top-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+                      
+						<div class="contactinfo">
+							<ul class="nav nav-pills"><li><a href="#">Kultur i Väst</a></li>  
+								<li><a href="#"><i class="fa fa-phone"></i> 031- 10 00 00</a></li>
+								<li><a href="#"><i class="fa fa-envelope"></i> info@kulturkatalogen.se</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="social-icons pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header_top-->
+		
+		<div class="header-middle"><!--header-middle-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="logo pull-left">
+							<a href="index.html">
+                                <img src="images/kulturkatalogen/tmplogoKulturkatalogen.png" /></a>
+						</div>					
+					</div>
+					<div class="col-sm-8">
+						<div class="shop-menu pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href="#"><i class="fa fa-star"></i> Önskelista</a></li>								
+								<li><a href="login.html"><i class="fa fa-lock"></i> Logga in</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header-middle-->
+	
+		<div class="header-bottom"><!--header-bottom-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-9">
+						<div class="mainmenu pull-left">
+							<ul class="nav navbar-nav collapse navbar-collapse">
+								<li><a href="index.html" class="active">Hem</a></li>
+								<li class="dropdown"><a href="#">För utövare<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="arrangemangform.html">Ansök</a></li>
+                                        <li><a href="shop.html">Products</a></li>
+										<li><a href="product-details.html">Product Details</a></li> 
+										<li><a href="checkout.html">Checkout</a></li> 
+										<li><a href="cart.html">SÖKRESULTAT</a></li> 
+										<li><a href="login.html">Login</a></li> 
+                                    </ul>
+                                </li> 
+								
+								<li><a href="404.html">Om kulturkatalogen</a></li>
+								<li><a href="contact-us.html">Kontakta oss</a></li>
+                                <li><a href="avanceradSearch.html">Sök</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="search_box pull-right">
+							<input type="text" placeholder="snabbsök"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header-bottom-->
+	</header><!--/header-->
+	
+	<section><!-- sökformulär -->
+		<div class="container">
+
+			<div class="row">
+				<div class="col">
+					<div class="contact-form">
+	    				<h2 class="title text-center">Sök i kulturkatalogen</h2>
+	    				<div class="status alert alert-success" style="display: none"></div>
+				    	<form id="main-contact-form" class="contact-form row" name="contact-form" method="post">
+                            <div class="form-group col-md-12">
+                                <input type="text" name="subject" class="form-control" required="required" placeholder="Sök på titel eller del av titel">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <input type="text" name="subject" class="form-control" required="required" placeholder="Sök på ord i">
+                            </div>
+
+                            <div class="form-group col-md-12">
+                                <input type="text" name="subject" class="form-control" required="required" placeholder="Sök på titel eller del av titel">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <input type="text" name="subject" class="form-control" required="required" placeholder="Sök på ord i">
+                            </div>
+                            
+                            <div class="form-group col-md-4">
+                                <div class="fieldGroup">
+                                    <label for="formTypeId" id="arr_label_id">Arrangemangstyp</label>
+                                    <select onchange="" id="formTypeId" class="form-control" required="required" placeholder="Arrangemangtyp">
+                                        <option value=""></option>
+                                        <option value="Föreställning på turné">Föreställning på turné</option>
+                                        <option value="Föreställning på fast scen">Föreställning på fast scen</option>
+                                        <option value="Författarbesök">Författarbesök</option>
+                                        <option value="Kulturpedagogiska projekt">Kulturpedagogiska projekt</option>
+                                        <option value="Fortbildningar">Fortbildningar</option>
+                                        <option value="Museilådor">Museilådor</option>
+                                        <option value="Resmålsbesök">Resmålsbesök</option>
+                                        <option value="Skolbio">Skolbio</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <div class="fieldGroup">
+                                    <label for="formArtformId">Konstform</label>
+                                    <select id="formArtformId" class="form-control" required="required" placeholder="Konstform">
+                                        <option value=""></option>
+                                        <option value="Arkitektur och design">Arkitektur och design</option>
+                                        <option value="Dans">Dans</option>
+                                        <option value="Film och media">Film och media</option>
+                                        <option value="Konst, form och design">Konst, form och design</option>
+                                        <option value="Litteratur, berättande, skrivande">Litteratur, berättande, skrivande</option>
+                                        <option value="Musik">Musik</option>
+                                        <option value="Natur- och kulturarv">Natur- och kulturarv</option>
+                                        <option value="Nycirkus/cirkus">Nycirkus/cirkus</option>
+                                        <option value="Slöjd">Slöjd</option>
+                                        <option value="Teater">Teater</option>
+                                        <option value="Teknik och multimedia">Teknik och multimedia</option>
+                                        <option value="Annan scenkonst">Annan scenkonst</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <div class="fieldGroup">
+                                    <label for="formTypeId" id="arr_label_id">Arrangemangstyp</label>
+                                    <select onchange="" id="formTypeId" class="form-control" required="required" placeholder="Arrangemangtyp">
+                                        <option value=""></option>
+                                        <option value="Föreställning på turné">Föreställning på turné</option>
+                                        <option value="Föreställning på fast scen">Föreställning på fast scen</option>
+                                        <option value="Författarbesök">Författarbesök</option>
+                                        <option value="Kulturpedagogiska projekt">Kulturpedagogiska projekt</option>
+                                        <option value="Fortbildningar">Fortbildningar</option>
+                                        <option value="Museilådor">Museilådor</option>
+                                        <option value="Resmålsbesök">Resmålsbesök</option>
+                                        <option value="Skolbio">Skolbio</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <div class="fieldGroup">
+                                        <label for="formArtformId">Konstform</label>
+                                        <select id="formArtformId" class="form-control" required="required" placeholder="Konstform">
+                                            <option value=""></option>
+                                            <option value="Arkitektur och design">Arkitektur och design</option>
+                                            <option value="Dans">Dans</option>
+                                            <option value="Film och media">Film och media</option>
+                                            <option value="Konst, form och design">Konst, form och design</option>
+                                            <option value="Litteratur, berättande, skrivande">Litteratur, berättande, skrivande</option>
+                                            <option value="Musik">Musik</option>
+                                            <option value="Natur- och kulturarv">Natur- och kulturarv</option>
+                                            <option value="Nycirkus/cirkus">Nycirkus/cirkus</option>
+                                            <option value="Slöjd">Slöjd</option>
+                                            <option value="Teater">Teater</option>
+                                            <option value="Teknik och multimedia">Teknik och multimedia</option>
+                                            <option value="Annan scenkonst">Annan scenkonst</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            <div class="form-group col-md-4">
+                                <div class="fieldGroup">
+                                    <label for="formTypeId" id="arr_label_id">Arrangemangstyp</label>
+                                    <select onchange="" id="formTypeId" class="form-control" required="required" placeholder="Arrangemangtyp">
+                                        <option value=""></option>
+                                        <option value="Föreställning på turné">Föreställning på turné</option>
+                                        <option value="Föreställning på fast scen">Föreställning på fast scen</option>
+                                        <option value="Författarbesök">Författarbesök</option>
+                                        <option value="Kulturpedagogiska projekt">Kulturpedagogiska projekt</option>
+                                        <option value="Fortbildningar">Fortbildningar</option>
+                                        <option value="Museilådor">Museilådor</option>
+                                        <option value="Resmålsbesök">Resmålsbesök</option>
+                                        <option value="Skolbio">Skolbio</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <div class="fieldGroup">
+                                    <label for="formArtformId">Konstform</label>
+                                    <select id="formArtformId" class="form-control" required="required" placeholder="Konstform">
+                                        <option value=""></option>
+                                        <option value="Arkitektur och design">Arkitektur och design</option>
+                                        <option value="Dans">Dans</option>
+                                        <option value="Film och media">Film och media</option>
+                                        <option value="Konst, form och design">Konst, form och design</option>
+                                        <option value="Litteratur, berättande, skrivande">Litteratur, berättande, skrivande</option>
+                                        <option value="Musik">Musik</option>
+                                        <option value="Natur- och kulturarv">Natur- och kulturarv</option>
+                                        <option value="Nycirkus/cirkus">Nycirkus/cirkus</option>
+                                        <option value="Slöjd">Slöjd</option>
+                                        <option value="Teater">Teater</option>
+                                        <option value="Teknik och multimedia">Teknik och multimedia</option>
+                                        <option value="Annan scenkonst">Annan scenkonst</option>
+                                    </select>
+                                </div>
+                            </div>                               
+                            <div class="form-group col-md-12">
+                                <input type="submit" name="submit" class="btn btn-primary" value="Sök">
+                            </div>
+                    </form>
+	    			</div>
+				</div>
+				
+			</div>
+		</div>
+	</section><!-- sökformulär -->
+    
+    <section id="cart_items"> <!-- sök resultat -->
+        <div class="container">   
+            <h2 class="title text-center">Sökresultat</h2>         
+            <div class="table-responsive cart_info">
+                
+                <table class="table table-condensed">
+                    <tbody>
+                        <tr>
+                            <td class="cart_product">
+                                <a href=""><img src="images/kulturkatalogen/mustang_h.jpg" /></a>
+                            </td>
+                            <td class="cart_description">
+                                <h4><a href="">Skolbio förskolan: Mustang</a></h4>
+                                <div class="choose">
+                                    <ul class="nav nav-pills ">
+                                        <li><a href="#">-Pia Tjäder, </a> </li>
+                                        <li><a href="#">-Ålder 7 till 19, </a> </li>
+                                        <li><a href="#">-Pia Tjäder, </a> </li>
+                                        <li><a href="#">-Ålder 7 till 19, </a> </li>
+                                        <li><a href="#">-Pia Tjäder, </a> </li>
+                                        <li><a href="#">-Ålder 7 till 19 </a> </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td class="cart_delete">
+                                <a class="cart_quantity_delete" href=""><i class="fa fa-eye"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cart_product">
+                                <a href=""><img src="images/kulturkatalogen/suffrageterna_h_1.jpg" alt=""></a>
+                            </td>
+                            <td class="cart_description">
+                                <h4><a href="">Skolbio förskolan: Franska för nybörjare</a></h4>
+                                <p>Mer information här... </p>
+                                <div class="choose">
+                                    <ul class="nav nav-pills ">
+                                        <li><a href="#">-Pia Tjäder, </a> </li>
+                                        <li><a href="#">-Ålder 7 till 19, </a> </li>
+                                        <li><a href="#">-Pia Tjäder, </a> </li>
+                                        <li><a href="#">-Ålder 7 till 19, </a> </li>
+                                        <li><a href="#">-Pia Tjäder, </a> </li>
+                                        <li><a href="#">-Ålder 7 till 19 </a> </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td class="cart_delete">
+                                <a class="cart_quantity_delete" href=""><i class="fa fa-eye"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cart_product">
+                                <a href=""><img src="images/kulturkatalogen/tigrar_h_3.jpg" alt=""></a>
+                            </td>
+                            <td class="cart_description">
+                                <h4><a href=""> Skapa film & rörlig bild</a></h4>
+                                <div class="choose">
+                                    <ul class="nav nav-pills ">
+                                        <li><a href="#">-Pia Tjäder, </a> </li>
+                                        <li><a href="#">-Ålder 7 till 19, </a> </li>
+                                        <li><a href="#">-Pia Tjäder, </a> </li>                                        
+                                    </ul>
+                                </div>
+                            </td>
+                            <td class="cart_delete">
+                                <a class="cart_quantity_delete" href=""><i class="fa fa-eye"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section> <!-- sök resultat -->
+
+	<footer id="footer"><!--Footer-->
+		
+        <img src="images/kulturkatalogen/kivsidfot.png" />
+       
+	</footer><!--/Footer-->
+	
+
+  
+    <script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/price-range.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
